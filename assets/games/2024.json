@@ -1,0 +1,123 @@
+{
+  "PreMatch": [
+    {
+      "name": "Scouter Name",
+      "required": true,
+      "type": "text"
+    },
+    {
+      "name": "Team #",
+      "required": true,
+      "type": "number"
+    },
+    {
+      "name": "Match #",
+      "required": true,
+      "type": "number"
+    },
+    {
+        "name": "Starting Postition",
+        "choices": ["At basket", "Towards basket", "Towards obs zone", "At obs zone", "N/A"],
+        "required": false,
+        "type": "radio"
+    }
+  ],
+  "Autonomous": [
+    {
+      "name": "Moved",
+      "type": "bool"
+    },
+    {
+      "name": "Auto Samples Picked Up",
+      "type": "counter"
+    },
+    {
+      "name": "Auto Specimens Picked Up",
+      "type": "counter"
+    },
+    {
+      "name": "Auto High Basket Scores",
+      "type": "counter"
+    },
+    {
+      "name": "Auto Low Basket Scores",
+      "type": "counter"
+    },
+    {
+      "name": "Auto High Chamber Scores",
+      "type": "counter"
+    },
+    {
+      "name": "Auto Low Chamber Scores",
+      "type": "counter"
+    },
+    {
+      "name": "Missed Scores",
+      "type": "counter"
+    },
+    {
+      "name": "Comments on Auto",
+      "type": "text"
+    }
+  ],
+  "TeleOp": [
+    {
+      "name": "Samples Picked Up",
+      "type": "counter"
+    },
+    {
+      "name": "Specimens Picked Up",
+      "type": "counter"
+    },
+    {
+      "name": "High Basket Scores",
+      "type": "counter"
+    },
+    {
+      "name": "Low Basket Scores",
+      "type": "counter"
+    },
+    {
+      "name": "High Chamber Scores",
+      "type": "counter"
+    },
+    {
+      "name": "Low Chamber Scores",
+      "type": "counter"
+    },
+    {
+      "name": "Missed",
+      "type": "counter"
+    }
+  ],
+  "EndGame": [
+    {
+      "name": "Ending Position",
+      "type": "radio",
+      "required": false,
+      "choices": ["None", "Obs Zone", "Level 1", "Level 2", "Level 3", "Failed"]
+    }
+  ],
+  "PostMatch": [
+    {
+      "name": "Picked up from",
+      "type": "radio",
+      "required": true,
+      "choices": ["Ground", "Submersible", "Both"]
+    },
+    {
+      "name": "Did they die or tip over during the match?",
+      "type": "bool"
+    },
+    {
+      "name": "Penalities (if any)",
+      "type": "text",
+      "required": false
+    },
+        {
+      "name": "Comments",
+      "type": "text",
+      "required": false
+    }
+  ]
+}
