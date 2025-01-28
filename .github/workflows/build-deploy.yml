@@ -54,7 +54,7 @@ jobs:
         run: mv build/app/outputs/flutter-apk/app-release.apk build/app/outputs/flutter-apk/FTCScouting.apk
 
       - name: Upload APK
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: FTCScouting.apk
           path: build/app/outputs/flutter-apk/FTCScouting.apk
